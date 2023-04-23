@@ -1,0 +1,9 @@
+project: ttf-mesh-fuzz
+target: fuzz-ttf-mesh
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /ttf-mesh-fuzz
+    libfuzzer: true
+    max_length: 310000
